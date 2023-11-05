@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@500;700&display=swap');
+/*General*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.fraunces{
+    font-family: 'Fraunces', serif;
+}
+.montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+h1, p{
+    padding: 0.5rem 0;
+}
+/*Main*/
+main{
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+p{
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+.divContainer{
+    display: flex;
+    border-radius: 0.5rem;
+    width: 650px;
+    background-color: hsl(0, 0%, 100%);
+}
+.title{
+    font-size: 40px;
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+}
+.description{
+    line-height: 1.5rem;
+}
+.space{
+    letter-spacing: 0.5rem;
+}
+.descount{
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsla(124, 30%, 39%, 0.800);
+}
+.cost{
+    display: flex;
+    align-items: center;
+}
+.complete{
+    text-decoration-line: line-through;
+    margin: 0px 0 0 20px;
+}
+button{
+    margin: 1rem 0;
+    width: 250px;
+    height: 45px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsla(124, 30%, 39%, 0.800);
+    border: none;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.car{
+    width: 15px;
+    margin: 0 10px;
+}
+
+.imgContainer{
+    width: 50%;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+img{
+    width: 100%;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+.infContainer{
+    width: 50%;
+    padding: 2rem;
+}
+.mobile{
+    display: none;
+}
+/*Footer*/
+.attribution {
+    font-size: 11px; text-align: center;
+    padding: 20px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*Cel*/
+@media screen and (max-width: 375px) {
+    main{
+        height: 150vh;
+        display: grid;
+        place-content: center;
+        margin: 20px;
+    }
+    .divContainer{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+    }
+    .imgContainer{
+        width: 100%;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+    img{
+        width: 100%;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+    .infContainer{
+        width: 100%;
+        padding: 2rem;
+    }
+    .mobile{
+        display: initial;
+    }
+    .desktop{
+        display: none;
+    }
+
+}
